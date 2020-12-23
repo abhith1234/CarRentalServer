@@ -67,7 +67,7 @@ app.get('/',(request,response)=>{
     response.send('<h1>welcome to mystore</h1>')
 })
 
-app.listen(4100,'0.0.0.0',()=>{
+app.listen(process.env.PORT || 4100,'0.0.0.0',()=>{
     console.log('server started running at port 4100')
 })
 
